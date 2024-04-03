@@ -548,6 +548,11 @@ video {
   display: table;
 }
 
+.bg-sky-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
