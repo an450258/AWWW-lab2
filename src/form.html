@@ -15,54 +15,99 @@
   </div>
 
   <div class="container p-5">
-    <h2>Formularz</h2>
+    <h2>Dane osobowe</h2>
     <form>
 
-      <div class="mb-3 mt-3">
-        <label for="email" class="form-label">Email:</label>
-        <input id="email" class="form-control" placeholder="you@example.com">
-      </div>
-
-      <div class="mb-3 mt-3">
-        <label for="check" class="form-label">Check:</label>
-        <div class="form-check" id="check">
-          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
-          <label class="form-check-label">Option 1</label><br>
-          <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
-          <label class="form-check-label">Option 2</label>
+      <div class="d-flex pb-3 pt-3">
+        <div class="me-3">
+          <label for="imie" class="form-label">Imię:</label>
+          <input id="imie" class="form-control">
+        </div>
+        <div class="ms-3">
+          <label for="nazwisko" class="form-label">Nazwisko:</label>
+          <input id="nazwisko" class="form-control">
         </div>
       </div>
 
-      <div class="mb-3 mt-3">
-        <label for="radio" class="form-label">Radio:</label>
+      <div class="pb-3 pt-3">
+        <label for="nazwa" class="form-label">Nazwa użytkownika:</label>
+        <input id="nazwa" class="form-control" placeholder="Nazwa użytkownika">
+      </div>
+
+      <label for="email" class="form-label">Email:</label>
+      <div class="input-group mb-3" id="email">
+        <span class="input-group-text">@</span>
+        <input class="form-control" placeholder="ty@example.com">
+      </div>
+
+      <div class="pb-3 pt-3">
+        <label for="adres" class="form-label">Adres:</label>
+        <input id="adres" class="form-control" placeholder="Adres">
+      </div>
+
+      <div class="d-flex pb-3 pt-3 border-bottom">
+        <div class="me-3">
+          <label for="select" class="form-label">Kraj:</label>
+        <select class="form-select" id=""select>
+          <option>Polska</option>
+          <option>Slovakia</option>
+        </select>
+        </div>
+
+        <div class="ms-3 me-3">
+          <label for="select" class="form-label">Miasto:</label>
+        <select class="form-select" id=""select>
+          <option>Warszawa</option>
+          <option>Bratislava</option>
+        </select>
+        </div>
+
+        <div class="ms-3">
+          <label for="adres" class="form-label">Kod pocztowy:</label>
+          <input id="adres" class="form-control" placeholder="Kod pocztowy">
+        </div>
+      </div>
+
+
+      <h2 class="pt-3">Opcje dostawy</h2>
+
+      <div class="pb-3 pt-3">
+        <label for="radio" class="form-label">Firma kurierska:</label>
         <div class="form-check" id="radio">
-          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>DHL
           <label class="form-check-label" for="radio1"></label>
         </div>
         <div class="form-check">
-          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">DPD
+          <label class="form-check-label" for="radio2"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">FedEx
+          <label class="form-check-label" for="radio2"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">InPost
           <label class="form-check-label" for="radio2"></label>
         </div>
       </div>
 
-      <div class="mb-3 mt-3">
-        <label for="select" class="form-label">Select:</label>
-        <select class="form-select" id=""select>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
+      <div class="pb-3 pt-3 border-bottom">
+        <div class="form-check" id="check">
+          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+          <label class="form-check-label">Przesyłka priorytetowa</label><br>
+          <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+          <label class="form-check-label">Przesyłka polecona</label>
+        </div>
       </div>
 
-      <div class="mb-3 mt-3">
+      <div class="pb-3 pt-3">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
 
     </form>
   </div>
 
-  <div class="mt-5 p-4 text-white text-center">
+  <div class="p-4 text-white text-center">
     <p>Footer</p>
   </div>
 
