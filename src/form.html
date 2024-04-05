@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "pl">
+<html lang = "pl" data-bs-theme="dark">
 
 <head>
   <link rel="stylesheet" href="main.css">
@@ -7,15 +7,62 @@
 </head>
 
 <body class="p-5">
-  <div class="container text-bg-primary p-5">
-    <h1>Formularz</h1>
+
+  <div class="p-5 bg-primary text-white text-center">
+    <h1>My First Bootstrap 5 Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+
+  <div class="container p-5">
+    <h2>Formularz</h2>
     <form>
+
       <div class="mb-3 mt-3">
         <label for="email" class="form-label">Email:</label>
-        <input id="email" placeholder="Wpisz email">
+        <input id="email" class="form-control" placeholder="you@example.com">
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="check" class="form-label">Check:</label>
+        <div class="form-check" id="check">
+          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+          <label class="form-check-label">Option 1</label><br>
+          <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+          <label class="form-check-label">Option 2</label>
+        </div>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="radio" class="form-label">Radio:</label>
+        <div class="form-check" id="radio">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+          <label class="form-check-label" for="radio1"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+          <label class="form-check-label" for="radio2"></label>
+        </div>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="select" class="form-label">Select:</label>
+        <select class="form-select" id=""select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
 
     </form>
+  </div>
+
+  <div class="mt-5 p-4 text-white text-center">
+    <p>Footer</p>
   </div>
 
 </body>
